@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/placesToGo"
+        android:title="Places To Go"
+        android:icon="@drawable/ic_places_to_go" />
+
+    <item
+        android:id="@+id/thingsToDo"
+        android:title="Things To Do"
+        android:icon="@drawable/ic_things_to_do" />
+
+</menu>

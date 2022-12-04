@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/placesToGo">
+
+    <fragment
+        android:id="@+id/thingsToDo"
+        android:name="com.abrahamgudratli.myfavoritesofcinema.ui.thingstodo.ThingsToDoFragment"
+        android:label="fragment_things_to_do"
+        tools:layout="@layout/fragment_things_to_do" >
+
+        <action
+            android:id="@+id/action_thingsToDo_to_addThingToDo"
+            app:destination="@id/addThingToDo" />
+        <action
+            android:id="@+id/action_thingsToDo_to_updatePlaceDetails"
+            app:destination="@id/updatePlaceDetails" />
+        <action
+            android:id="@+id/action_thingsToDo_to_placesToGo"
+            app:destination="@id/placesToGo" />
+    </fragment>
+    <fragment
+        android:id="@+id/placesToGo"
+        android:name="com.abrahamgudratli.myfavoritesofcinema.ui.placestogo.PlacesToGoFragment"
+        android:label="fragment_places_to_go"
+        tools:layout="@layout/fragment_places_to_go" >
+
+        <action
+            android:id="@+id/action_placesToGo_to_addPlaceToGo"
+            app:destination="@id/addPlaceToGo" />
+        <action
+            android:id="@+id/action_placesToGo_to_updateThingDetails"
+            app:destination="@id/updateThingDetails" />
+        <action
+            android:id="@+id/action_placesToGo_to_thingsToDo"
+            app:destination="@id/thingsToDo" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPlaceToGo"
+        android:name="com.abrahamgudratli.myfavoritesofcinema.ui.placestogo.AddPlaceToGo"
+        android:label="fragment_add_place_to_go"
+        tools:layout="@layout/fragment_add_place_to_go" >
+
+        <action
+            android:id="@+id/action_addPlaceToGo_to_placesToGo"
+            app:destination="@id/placesToGo" />
+        <action
+            android:id="@+id/action_addPlaceToGo_to_placesToGo2"
+            app:destination="@id/placesToGo" />
+        <action
+            android:id="@+id/action_addPlaceToGo_to_thingsToDo"
+            app:destination="@id/thingsToDo" />
+    </fragment>
+    <fragment
+        android:id="@+id/addThingToDo"
+        android:name="com.abrahamgudratli.myfavoritesofcinema.ui.thingstodo.AddThingToDo"
+        android:label="fragment_add_thing_to_do"
+        tools:layout="@layout/fragment_add_thing_to_do" >
+
+        <action
+            android:id="@+id/action_addThingToDo_to_thingsToDo"
+            app:destination="@id/thingsToDo" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateThingDetails"
+        android:name="com.abrahamgudratli.myfavoritesofcinema.ui.thingstodo.UpdateThingDetails"
+        android:label="fragment_update_thing_details"
+        tools:layout="@layout/fragment_update_thing_details" >
+
+        <action
+            android:id="@+id/action_updateThingDetails_to_placesToGo"
+            app:destination="@id/placesToGo" />
+    </fragment>
+    <fragment
+        android:id="@+id/updatePlaceDetails"
+        android:name="com.abrahamgudratli.myfavoritesofcinema.ui.placestogo.UpdatePlaceDetails"
+        android:label="fragment_update_place_details"
+        tools:layout="@layout/fragment_update_place_details" >
+
+        <action
+            android:id="@+id/action_updatePlaceDetails_to_thingsToDo"
+            app:destination="@id/thingsToDo" />
+    </fragment>
+</navigation>

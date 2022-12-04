@@ -1,22 +1,21 @@
 package com.abrahamgudratli.myfavoritesofcinema.data
 
-import androidx.room.Delete
-import androidx.room.Insert
-import androidx.room.Query
-import androidx.room.Update
+import androidx.lifecycle.LiveData
+import androidx.room.*
 
+@Dao
 interface ThingsToDoDao {
 
     @Query("SELECT * FROM ThingsToDo")
-    suspend fun getAllPlaces()
+    fun getAllThings() : LiveData<List<ThingsToDo>>
 
     @Insert
-    suspend fun addNewPlace()
+    suspend fun addNewThing(item: ThingsToDo)
 
     @Update
-    suspend fun updatePlaceDetail()
+    suspend fun updateThingDetail(item: ThingsToDo)
 
     @Delete
-    suspend fun deletePlace()
+    suspend fun deleteThing(item: ThingsToDo)
 
 }

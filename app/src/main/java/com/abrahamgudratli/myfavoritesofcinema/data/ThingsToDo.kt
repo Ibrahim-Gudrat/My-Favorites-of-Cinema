@@ -9,6 +9,6 @@ data class ThingsToDo(
     var id: Int,
     var title: String,
     var description: String,
-    var image: Int,
+    var image: String,
     var rating: Int
 )

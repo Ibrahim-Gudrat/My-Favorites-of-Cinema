@@ -3,7 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android Development/MyFavoritesOfCinema/app/src/main/res/layout/activity_main.xml" value="0.24479166666666666" />
+        <entry key="..\:/Android Development/MyFavoritesOfCinema/app/src/main/res/drawable/ic_places_to_go.xml" value="0.192" />
+        <entry key="..\:/Android Development/MyFavoritesOfCinema/app/src/main/res/drawable/ic_things_to_do.xml" value="0.192" />
+        <entry key="..\:/Android Development/MyFavoritesOfCinema/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Android Development/MyFavoritesOfCinema/app/src/main/res/layout/fragment_add_place_to_go.xml" value="0.24479166666666666" />
+        <entry key="..\:/Android Development/MyFavoritesOfCinema/app/src/main/res/layout/fragment_add_thing_to_do.xml" value="0.24479166666666666" />
+        <entry key="..\:/Android Development/MyFavoritesOfCinema/app/src/main/res/layout/fragment_places_to_go.xml" value="0.264" />
+        <entry key="..\:/Android Development/MyFavoritesOfCinema/app/src/main/res/layout/fragment_things_to_do.xml" value="0.264" />
+        <entry key="..\:/Android Development/MyFavoritesOfCinema/app/src/main/res/layout/fragment_update_place_details.xml" value="0.20085470085470086" />
+        <entry key="..\:/Android Development/MyFavoritesOfCinema/app/src/main/res/layout/fragment_update_thing_details.xml" value="0.20085470085470086" />
+        <entry key="..\:/Android Development/MyFavoritesOfCinema/app/src/main/res/layout/item.xml" value="0.1" />
+        <entry key="..\:/Android Development/MyFavoritesOfCinema/app/src/main/res/menu/bottom_nav.xml" value="0.1" />
       </map>
     </option>
   </component>

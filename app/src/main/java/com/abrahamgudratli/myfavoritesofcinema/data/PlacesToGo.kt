@@ -9,6 +9,6 @@ data class PlacesToGo(
     var id: Int,
     var title: String,
     var description: String,
-    var image: Int,
-    var rating: Int
+    var image: String,
+    var rating: String
 )
