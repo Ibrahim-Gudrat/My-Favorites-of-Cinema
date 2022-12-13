@@ -13,7 +13,7 @@ import kotlinx.coroutines.launch
 
 class ViewModelThingsToDo(application: Application): AndroidViewModel(application) {
 
-    private var listOfThings: LiveData<List<ThingsToDo>>
+    var listOfThings: LiveData<List<ThingsToDo>>
     private var repository: ThingsToDoRepository
 
     init {

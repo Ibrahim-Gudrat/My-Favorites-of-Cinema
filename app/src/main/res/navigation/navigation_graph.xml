@@ -17,9 +17,6 @@
         <action
             android:id="@+id/action_thingsToDo_to_updatePlaceDetails"
             app:destination="@id/updatePlaceDetails" />
-        <action
-            android:id="@+id/action_thingsToDo_to_placesToGo"
-            app:destination="@id/placesToGo" />
     </fragment>
     <fragment
         android:id="@+id/placesToGo"
@@ -33,9 +30,6 @@
         <action
             android:id="@+id/action_placesToGo_to_updateThingDetails"
             app:destination="@id/updateThingDetails" />
-        <action
-            android:id="@+id/action_placesToGo_to_thingsToDo"
-            app:destination="@id/thingsToDo" />
     </fragment>
     <fragment
         android:id="@+id/addPlaceToGo"
@@ -49,9 +43,6 @@
         <action
             android:id="@+id/action_addPlaceToGo_to_placesToGo2"
             app:destination="@id/placesToGo" />
-        <action
-            android:id="@+id/action_addPlaceToGo_to_thingsToDo"
-            app:destination="@id/thingsToDo" />
     </fragment>
     <fragment
         android:id="@+id/addThingToDo"

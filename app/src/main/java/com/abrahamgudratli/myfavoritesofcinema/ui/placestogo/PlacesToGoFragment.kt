@@ -26,15 +26,12 @@ class PlacesToGoFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-
         val view = inflater.inflate(R.layout.fragment_places_to_go, container, false)
-
 
         val recyclerView = view.recyclerViewPlaces
         val adapter = PlacesRecyclerviewAdapter(this.requireContext())
         recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(this.requireContext())
-
 
         viewModel = ViewModelProvider(this).get(ViewModelPlacesToGo::class.java)
         viewModel.listOfPlaces.observe(viewLifecycleOwner, Observer { places ->

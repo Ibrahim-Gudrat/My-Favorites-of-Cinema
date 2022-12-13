@@ -27,7 +27,7 @@ class AddPlaceToGo : Fragment() {
         // Inflate the layout for this fragment
         var view = inflater.inflate(R.layout.fragment_add_place_to_go, container, false)
 
-        viewModel = ViewModelProvider(this).get(ViewModelPlacesToGo::class.java)
+        viewModel = ViewModelProvider(this)[ViewModelPlacesToGo::class.java]
 
         view.btnAddPlace.setOnClickListener {
             addPlaceToDatabase()

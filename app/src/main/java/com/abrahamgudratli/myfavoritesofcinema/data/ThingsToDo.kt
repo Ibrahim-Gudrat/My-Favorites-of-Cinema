@@ -10,5 +10,5 @@ data class ThingsToDo(
     var title: String,
     var description: String,
     var image: String,
-    var rating: Int
+    var rating: String
 )
